@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "npm run build",
-    "dev": "vite",
+    "dev": "node --watch index.js",
     "serve": "vite preview"
   },
   "author": "",
