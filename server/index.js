@@ -29,10 +29,10 @@ app.use(helmet({
 
 const PORT = 5000 || process.env.PORT 
 
-app.get("/",(request,response)=>{
-    ///server to client
-    response.json({
-        message : "Server is running " + PORT
+app.get("/",(req,res)=>{
+    res.send({
+        activeStatus: true,
+        error:false,
     })
 })
 
